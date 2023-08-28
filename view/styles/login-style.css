@@ -1,0 +1,92 @@
+.mainContainer{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 50%;
+    height: 400px;
+    background: #fff;
+    margin:  0 auto;
+    border: 2px solid #fff;
+    box-shadow: 0 15px 40px rgb(0,0,0,.5);
+   
+}
+
+.mainContainer .left{
+    float: left;
+    width: 50%;
+    height: 400px;
+    background: url(/view/assets/imgs/residuum.jpeg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+.mainContainer .right{
+    float: right;
+    width: 50%;
+    height: 400px;
+    box-sizing: border-box;
+}
+
+.mainContainer .right >h3{
+    text-align: center;
+    font-weight: 800;
+    margin-top: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.formBox{
+    width: 100%;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    height: 200px;
+    background: #fff;
+}
+
+.formBox input::placeholder,
+textarea::placeholder{
+    color: black;
+}
+
+
+.formBox p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 5px 15px;
+    padding: 0;
+    font-size: 12px;
+}
+
+.formBox input{
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    background-color: #4E6154;
+}
+
+
+.formBox input[type="submit"]{
+    border:none;
+    outline:none;
+    height: 40px;
+    color:#fff;
+    background: #262626;
+    cursor: pointer;
+}
+
+.formBox input[type="submit"]:hover{
+    background: #4E6154;
+}
+
+.formBox a {
+    color: #262626;
+    font-size: 12px;
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
