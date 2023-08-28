@@ -1,0 +1,20 @@
+.slider {
+    margin-top: 5%;
+    width: 300px; /* Defina a largura do slider conforme necessário */
+    overflow: hidden;
+}
+  
+.slider-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+  
+.slider-item {
+    flex-shrink: 0;
+    width: 100%;
+}
+  
+.slider-item img {
+    max-width: 100%;
+    height: 100%;
+}
