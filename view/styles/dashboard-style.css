@@ -1,0 +1,52 @@
+.secaoBoard{
+
+  position: fixed;
+  left: 27%;
+  top: 19%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 14vh;
+  
+}
+
+.secaoBoard h2{
+    margin-top: 10px;
+    text-align:left;
+    font-weight: bold;
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Estilo para os cards */
+.box-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 200px;
+}
+  
+.box-info-single {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    flex-basis: calc(33.33% - 20px); /* Distribui igualmente em três colunas, com margens entre eles */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+.infor-text h4 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 0 0 10px;
+    text-transform: uppercase;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+  
+.infor-text p {
+    font-size: 16px;
+    margin: 0;
+}
+  
+.chart-canvas {
+    max-width: 80%; /* Ajuste conforme necessário */
+    max-height: 40vh; /* Ajuste conforme necessário */
+  }

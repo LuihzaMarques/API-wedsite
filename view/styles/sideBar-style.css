@@ -47,12 +47,13 @@ body{
     padding: 0 16px 0 12px;
     border-radius: 5px;
     line-height: 1;
-    color: #fff;
+    color: black;
+    font-weight: bold;
     text-decoration: none;
 }
 
 .sidebar button:hover > a{
-    background-color: black;
+    background-color: rgb(109, 109, 109);
     transition: all 0.2s;
 }
 
