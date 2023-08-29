@@ -2,7 +2,6 @@ body{
     font-family: sans-serif;
 }
 
-
 .sidebar{
 
     margin-top: 80px;
@@ -23,7 +22,6 @@ body{
     background: transparent;
     border: 0;
     font-family: inherit;
-    color: #fff;
     cursor: pointer;
     text-align: right;
     padding: 0;
@@ -32,18 +30,29 @@ body{
     
 }
 
-.sidebar button > span{
+
+.sidebar button > a{
+
+    display: inline-flex;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.sidebar button a > span{
+
     display: inline-flex;
     align-items: center;
     gap: 12px;
     height: 48px;
     padding: 0 16px 0 12px;
-    border-radius: 24px;
+    border-radius: 5px;
     line-height: 1;
+    color: #fff;
+    text-decoration: none;
 }
 
-.sidebar button:hover > span{
-    background-color:  #4E6154;
+.sidebar button:hover > a{
+    background-color: black;
     transition: all 0.2s;
 }
 
@@ -53,11 +62,14 @@ body{
     transition: 0.2s;
 }
 
-.sidebar button  span{
+.sidebar button a{
     font-size: 16px;
   
 }
 
 .sidebar >nav{
     flex: 1 1 auto;
+    flex-direction: column;
+    width: 100%;
 }
+
