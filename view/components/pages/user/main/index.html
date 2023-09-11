@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="/view/styles/@import-style.css">
     <link rel="shortcut icon" href="/view/assets/icons/favicon.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+   
     
 </head>
 <body>
@@ -71,18 +71,70 @@
     </aside> 
    
     
+    <div class="container">
+      <div class="header">
+        <span>LISTAGEM DE USUÁRIOS</span>
+        <button onclick="openCadastroModal()" id="new">Cadastrar</button>
+      </div>
     
- <!--
-    <div id="overlay" class="hidden">
-    <div id="modal">
-      <h2>Ação</h2>
-      <p>Você tem certeza de que deseja realizar esta ação?</p>
-      <button id="confirm-btn">Confirmar</button>
-      <button id="cancel-btn">Cancelar</button>
-    </div>
-  </div>
-     
- --> 
+      <div class="divTable">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>NOME COMPLETO</th>
+              <th>USERNAME</th>
+              <th class="acao"><button class="editar-button" onclick="editarUsuario()">Editar</button></th>
+              <th class="acao"><button class="excluir-button" onclick="excluirUsuario()">Excluir</button></th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    
+       <!-- Modal de Cadastro -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeCadastroModal()">&times;</span>
+          <h2>Cadastro de Usuário</h2>
+          <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <button type="button" onclick="confirmarCadastro()">Confirmar</button>
+          </form>
+        </div>
+      </div>
+    
+          <!-- Modal de Edição -->
+      <div id="editarModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeEditarModal()">&times;</span>
+          <h2>Editar Usuário</h2>
+        <form>
+          <label for="nomeCompleto">Nome Completo:</label>
+          <input type="text" id="nomeCompleto" required>
+          <label for="username">Username:</label>
+          <input type="text" id="username" required>
+          <button type="button" onclick="confirmarEdicao()">Confirmar Edição</button>
+        </form>
+      </div>
+      </div>
+
+        <!-- Modal de Exclusão -->
+      <div id="excluirModal" class="modal">
+        <div class="modal-content">
+        <span class="close" onclick="closeExcluirModal()">&times;</span>
+        <h2>Excluir Usuário</h2>
+        <p>Tem certeza de que deseja excluir este usuário?</p>
+        <button type="button" onclick="confirmarExclusao()">Sim</button>
+        <button type="button" onclick="cancelarExclusao()">Cancelar</button>
+        </div>
+      </div>
+
+  
 
     <footer class="footer">
         <p>&copy; 2023 RESIDUUM. Todos os direitos reservados.</p>
