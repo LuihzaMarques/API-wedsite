@@ -17,21 +17,44 @@
             <h3>LOGIN</h3>
             <div class="formBox">
                 <form>
-                   <p>USERNAME</p> 
-                   <input type="text" name="" placeholder="username">
+                   <p>USERNAME/CNPJ</p> 
+                   <input type="text" name="" placeholder="username" id="usernameAndCNPJId">
 
                    <p>SENHA</p>
-                   <input type="password" name="" placeholder="*******">
-                   <input type="submit" name="" value="ENTRE">
-                   <a href="#">Cadastre-se aqui</a>
+                   <input type="password" name="" placeholder="*******" id="passwordId">
+                   <input type="submit" name="" value="ENTRE" onclick="fazerLogin()">
+                  
+                   <button onclick="openCadastroModal()" id="new">Cadastra-se aqui</button>
                 </form>
             </div>
         </div>
     </div>
 
+     <!-- Modal de Cadastro -->
+     <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeCadastroModal()">&times;</span>
+          <h2>Cadastro de Usuário</h2>
+          <form>
+            <label for="nomeCadastroID">Nome:</label>
+            <input type="text" id="nomeCadastroID" required>
+            <label for="userNameCadastroID">Username:</label>
+            <input type="text" id="userNameCadastroID" required>
+
+            <label for="cadastroPasswordID">Senha:</label>
+            <input type="password" id="cadastroPasswordID" required>
+
+            <button type="button" onclick="confirmarCadastro()">Confirmar</button>
+          </form>
+        </div>
+      </div>
+
     <footer class="footer">
         <p>&copy; 2023 RESIDUUM. Todos os direitos reservados.</p>
     </footer>
     
+  
+    <script src="/controller/login.js"></script>
+  
 </body>
 </html>

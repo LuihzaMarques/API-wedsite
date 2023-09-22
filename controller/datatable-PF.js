@@ -16,12 +16,12 @@ function confirmarCadastro() {
   
     
     const novoUsuario = {
-      nome: nome,
-      username: username,
+      user_usuario: nome,
+      user_username: username,
     };
   
    
-    fetch('URL_DA_API_DE_CADASTRO', {
+    fetch('http://localhost:8080/cadastro', {
       method: 'POST', 
       headers: {
         'Content-Type': 'application/json', 
